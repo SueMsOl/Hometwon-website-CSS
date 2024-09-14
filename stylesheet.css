@@ -1,0 +1,241 @@
+/*stylesheet*/
+.pagebody{
+    margin: 0;
+    padding: 0;
+    height: 2200px;
+    background: #0B1D26;
+}
+.main{
+    margin: -60px auto;
+    width:100%;
+    height:700px;
+    background-image: url("images/HG.png");
+    background-size: cover;
+}
+#mountain {
+    background-image: url("images/MG.png");
+    padding:0px;
+    margin-top: -200px;
+}
+#logos{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 150px;
+
+
+}
+.texth1{
+    margin-top: -1000px;
+    max-width:300px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    color: #0B1D26;
+    text-shadow: 1px 3px 4px #3e525c;
+}
+.texth2{
+    max-width:300px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 50px;
+    text-align: center;
+    font-style: italic;  
+    color: #7EA2AA;
+    text-shadow: 1px 2px 4px #0B1D26; 
+}
+hr {
+    width: 400px;
+}
+.headingCTA{
+    font-size: 45px;
+    max-width: 700px;
+    margin: 380px auto 0px auto;
+    padding: 30px 50px;
+    text-align: center;
+    background:linear-gradient(#f2bb05,#9cb1b4);
+    border-radius: 25px;
+    border-bottom: 25px solid #9cb1b4;
+    text-shadow: 2px 2px 5px;
+    box-shadow: 2px 2px 5px #0B1D26 inset;
+
+}
+#cta-2{
+    font-size: 15px;
+    margin-bottom: -20px;
+    
+}
+.top-boxes{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -835px;
+    padding: 10px;
+
+}
+#leftbox{
+    border-radius: 50%;
+    width:500px;
+    height:300px;
+    background-image: url("forest.webp");
+    box-shadow: 2px 2px 10px 6px #0B1D26;
+}
+#rightbox{
+    border-radius: 50%;
+    width:500px;
+    height:300px;
+    background-image: url("seaside.webp");
+    box-shadow: 2px 2px 10px 6px #0B1D26;
+}
+.photo1 {
+    border: 2px solid #9cb1b4;
+    width: 300px;
+    height: 300px;
+    background-image: url("imagesAmol/shahrak2.jpg");
+    background-size: cover;
+    animation-name: photo1animate;  
+}
+
+    @keyframes photo1animate {
+        from{background-image: url("imagesAmol/shahrak2.jpg");}
+        to{background-image:url("imagesAmol/shahrak3.jpg")}
+    }
+
+.photo2 {
+    border: 2px solid #9cb1b4;
+    width: 300px;
+    height: 300px;
+    background-image: url("imagesAmol/Babol-and-Amol-Forests-Amol-1.jpg");
+    background-size: cover;
+    animation-name:photo2animate;  
+}
+@keyframes photo2animate {
+    from{background-image: url("imagesAmol/Yakhi-Waterfall-Amol-1.jpg");}
+    to{background-image:url("imagesAmol/download.jpg")}
+}
+
+.photo3 {
+    border: 2px solid #9cb1b4;
+    width: 300px;
+    height: 300px;
+    background-image: url("imagesAmol/food.jpg");
+    background-size: cover;
+    animation-name: photo3animate;
+}
+@keyframes photo3animate {
+    from{background-image: url("imagesAmol/food4.jpg");}
+    to{background-image:url("imagesAmol/food1.jpg")}
+}
+
+.photo1, .photo2, .photo3{
+animation-duration: 8s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: ease-in-out;
+animation-fill-mode: forwards;
+}
+.photo1:hover, .photo2:hover, .photo3:hover {
+    width: 400px;
+    height: 400px;
+}
+.photo:hover li {
+color: #0B1D26;
+background-color: #f2bb05;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.flex-group {
+    display:flex;
+    justify-content: space-around;
+    margin-top: 800px;
+}
+.photo1, .photo2, .photo3 {
+    border-radius: 100%;
+    padding: 15px;
+    box-shadow: 1px 3px 10px #9cb1b4;
+
+}
+.list1{
+    color:aliceblue;
+    font-size: 25px;
+    line-height: 40px;
+    border-left: 2px solid #9cb1b4;
+    max-width:300px;
+    margin-left: auto;
+    margin-right:auto;
+}
+.button-1{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    background: #9cb1b4;
+    border-radius: 10px;
+    box-shadow: 1px 3px 2px #9cb1b4;
+    font-style: oblique;
+
+}
+.list2{
+    color:aliceblue;
+    font-size: 25px;
+    line-height: 40px;
+    border-left: 2px solid #9cb1b4;
+    max-width:300px;
+    margin-left: auto;
+    margin-right:auto;
+}
+.list3{
+    color:aliceblue;
+    font-size: 25px;
+    line-height: 40px;
+    border-left: 2px solid #9cb1b4;
+    max-width:300px;
+    margin-left: auto;
+    margin-right:auto;
+}
+#town-animate{
+    animation-name: animate-town;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+@keyframes animate-town {
+    0% {color:#0B1D26}
+    25% {color:#7EA2AA}
+    50% {color:rgb(137, 123, 105)}
+    75% {color:rgb(89, 161, 137)}
+    100% {color:black}
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 470px;
+}
+footer p {
+    margin: 0 10px;
+    color: #9cb1b4;
+}
+footer .B {
+    font-weight: bold;
+}
+footer .C {
+    font-style: italic;
+}
+
+.questions{
+    color:#9cb1b4;
+    display:flex;
+    justify-content: space-around;
+    margin-top: 200px;
+    font-size: 30px;
+    font-family: inherit;
+}
+fieldset {
+    margin: 0px 15px;
+}
+
