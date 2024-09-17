@@ -243,4 +243,50 @@ footer .C {
 fieldset {
     margin: 0px 15px;
 }
+#carousel-img {
+    display:block;
+    height: 300px;
+    margin:70px auto;
+    border-radius: 15px;
+    border-bottom: 40px solid #f2bb05;
+    box-shadow: 3px 4px 5px #9cb1b4;
+}
 
+.carousel-btn{
+    display: flex;
+    justify-content: center;
+}
+#next-btn, #previous-btn {
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: -30px;
+    background: #f2bb05;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.amolh3{
+    color: #9cb1b4;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: -50px;
+    animation-name: Amolphoto;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    background: linear-gradient(to right, #0B1D26, #f2bb05);
+}
+@keyframes Amolphoto {
+  0% { background-color: #0B1D26;
+    color: #f2bb05;}
+  50% { background-color: #f2bb05;
+    color:#0B1D26;}
+    100% { background-color: #7EA2AA;
+        color: #f2bb05;} 
+}

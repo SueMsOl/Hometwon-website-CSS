@@ -49,6 +49,15 @@
             </div>
         </div>
 
+        <div id="carousel">
+            <h3 class="amolh3">More Amol photos</h3>
+            <img id="carousel-img" src="https://lh5.googleusercontent.com/p/AF1QipObTwOkF1VwQS9ECMRQynkF-Tsy_7h6WMNHryUH=w675-h390-n-k-no" alt="Carousel Image">
+            <div class="carousel-btn">
+            <button id="previous-btn">Previous</button>
+            <button id="next-btn">Next</button>
+        </div>
+        </div>
+
         <div class="questions">
             <fieldset>
                 <legend>
@@ -70,5 +79,50 @@
             <p class="B">Creator by Sue Mohamadi</p>
             <p class="C"><a href="https://codeyourfuture.io/" target="_blank">CYF</a> 2024</p>
         </footer>
+        <script>
+            // Define the array of image URLs
+            var images = [
+                'https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQ5xL9PMPyMgXrPOFNJ0_JqhOiUlzhJ1vjqmi6FsESmb_NI09bSykaKuzWlGr30Zm9TjTtmCQy9v88XRClXCjSa5VTBuTm7H9imojqyR_o', 
+                'https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcSq1Mbjzs8XqPpTpR5sQ-hkMQuJu6KZPd0MnKbAODaWt2izliXy91Iglcf29FTsFvFyeg_q_WVYaDi2vkVSSzXgHkhx6WZvN-meYoVr9yQ', 
+                'https://lh5.googleusercontent.com/p/AF1QipNbZcLJRy0jJ3yO88MXc6gHKumMmVlo-EgvfLtg=w675-h390-n-k-no'
+            ];
+            var currentIndex = 0;
+        
+            // Function to update the image
+            function updateImage() {
+                var imgElem = document.getElementById('carousel-img');
+                imgElem.src = images[currentIndex];
+            }
+        
+            // Function to handle the 'previous' button
+            function previousImage() {
+                if (currentIndex === 0) {
+                    currentIndex = images.length - 1;
+                } else {
+                    currentIndex--;
+                }
+                updateImage();
+            }
+        
+            // Function to handle the 'next' button
+            function nextImage() {
+                if (currentIndex === images.length - 1) {
+                    currentIndex = 0;
+                } else {
+                    currentIndex++;
+                }
+                updateImage();
+            }
+        
+            window.onload = function() {
+                // Set the initial image
+                updateImage();
+        
+                // Add event listeners to the buttons
+                document.getElementById('previous-btn').addEventListener('click', previousImage);
+                document.getElementById('next-btn').addEventListener('click', nextImage);
+            }
+        </script>
+        
     </body>
 </html>
